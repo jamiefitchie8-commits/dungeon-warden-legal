@@ -1,0 +1,63 @@
+name: Dungeon Warden feedback or support
+description: Send feedback, bug reports, support questions, or privacy/deletion requests for Dungeon Warden.
+title: "Dungeon Warden feedback: "
+labels:
+  - feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Dungeon Warden.
+
+        Do not include sensitive personal information, passwords, payment details, government ID numbers, health information, private family information, or anything confidential.
+
+        GitHub issues may be public. Your GitHub username and anything you type here may be visible to others and handled by GitHub under GitHub's own terms and privacy notices.
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: What is this about?
+      options:
+        - Gameplay feedback
+        - Bug report
+        - Voice command or Alexa recognition problem
+        - Privacy or save deletion request
+        - Terms or policy question
+        - Other support question
+    validations:
+      required: true
+  - type: dropdown
+    id: locale
+    attributes:
+      label: Alexa locale, if relevant
+      options:
+        - Not sure / not relevant
+        - en-GB
+        - en-US
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Tell us what happened or what you want to suggest. Avoid sensitive personal information.
+      placeholder: "Example: Alexa heard 'show armour' correctly, but the response was confusing because..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce, if this is a bug
+      description: Optional. Include the commands you said and what you expected to happen.
+      placeholder: |
+        1. Open Dungeon Warden
+        2. Say ...
+        3. Expected ... but heard ...
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I have not included sensitive personal information or confidential material.
+          required: true

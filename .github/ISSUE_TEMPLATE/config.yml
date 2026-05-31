@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Dungeon Warden Privacy Policy
+    url: https://jamiefitchie8-commits.github.io/dungeon-warden-legal/privacy.html
+    about: Read how Dungeon Warden handles data.
+  - name: Dungeon Warden Terms and Conditions
+    url: https://jamiefitchie8-commits.github.io/dungeon-warden-legal/terms.html
+    about: Read the terms for using Dungeon Warden.
